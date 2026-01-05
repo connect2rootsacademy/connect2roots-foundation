@@ -333,17 +333,18 @@ export default function Hero() {
       </div>
 
       {/* Hero Section */}
-      <section className="min-h-screen w-full relative bg-white">
-        {/* Soft Green Glow */}
+      <div className="min-h-screen w-full bg-white relative">
+        {/* Morning Haze */}
         <div
           className="absolute inset-0 z-0"
           style={{
             backgroundImage: `
-        radial-gradient(circle at center, #8FFFB0, transparent)
-      `,
+          radial-gradient(circle at 50% 100%, rgba(253, 224, 71, 0.4) 0%, transparent 60%),
+          radial-gradient(circle at 50% 100%, rgba(251, 191, 36, 0.4) 0%, transparent 70%),
+          radial-gradient(circle at 50% 100%, rgba(244, 114, 182, 0.5) 0%, transparent 80%)
+        `,
           }}
         />
-        {/* Your Content/Components */}
         <div className="min-h-screen pb-20 -mt-20">
           <motion.div
             variants={container}
@@ -471,7 +472,7 @@ export default function Hero() {
             </motion.div>
           </motion.div>
         </div>
-      </section>
+      </div>
 
       {/* Numbers achievements */}
       <section className="-mb-30 -mt-35 py-32 px-4 md:px-16 lg:px-24 xl:px-32">
